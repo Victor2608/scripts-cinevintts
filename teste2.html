@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Streaming</title>
+    <style>
+        .red { color: red; }
+        .green { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Teste de Streaming</h1>
+    <input type="text" id="streamUrl" placeholder="Insira o link do teste">
+    <button onclick="startTest()">Iniciar Teste</button>
+    <p id="status"></p>
+
+    <script>
+        function startTest() {
+            var streamUrl = document.getElementById('streamUrl').value;
+            var statusElement = document.getElementById('status');
+
+            if (streamUrl.trim() === '') {
+                statusElement.innerHTML = "Insira um link válido.";
+                return;
+            }
+
+            statusElement.innerHTML = "Teste em andamento...";
+            testStream(streamUrl);
+        }
+
+        function testStream(streamUrl) {
+            var video = document.createElement('video');
+            video.src = streamUrl;
+            video.autoplay = true;
+            video.onended = function() {
+                setStatus("Lista travando.", true);
+            };
+            video.onerror = function() {
+                setStatus("Lista travando.", true);
+            };
+            var timeout = setTimeout(function() {
+                video.pause();
+                setStatus("Lista funcionando.", false);
+            }, 120000); // 2 minutos
+        }
+
+        function setStatus(message, isError) {
+            var statusElement = document.getElementById('status');
+            statusElement.innerHTML = message;
+            statusElement.className = isError ? 'red' : 'green';
+        }
+    </script>
+</body>
+</html>

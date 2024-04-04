@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Scripts | Cinevintt's</title>
+
+<style>
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Propriedades do elemento semântico de cabeçalho (header)*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header > a > img {
+    border-radius: 50%;
+}
+
+/* Propriedades de diferentes estados de links (a) dentro de um elemento semântico de navegação (nav)*/
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+    color: white;
+    text-decoration: none;
+    
+    height: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    padding: 7px 12px;
+    border-radius: 5px;
+    transition: background-color 0.1s ease; /* Adiciona uma transição suave para o efeito hover */
+}
+
+/*Propriedades para todos os links dentro do elemento nav (Efeito de quando o mouse está sobre um link)*/
+nav a:hover {
+    color: #007bff;
+    background: white; /* Cor de fundo com 80% de opacidade */;
+}
+
+/*Propriedades da lista não ordenada dentro do elemento semântico de navegação (nav) */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    place-items: center; 
+    margin: 0;
+    padding: 0;
+  
+}
+
+/*Propriedades dos itens da lista dentro do elemento semântico de navegação (nav)*/
+nav li {
+    margin-right: 20px;
+}
+
+/*Propriedades da classe botao home do seu link dentro do elemento semântico de navegação (nav)*/
+nav a.botao-scripts {
+    color: #007bff;
+    background: white;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------*/
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.script {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.script h2 {
+    color: #007bff;
+}
+
+.script p {
+    margin-bottom: 20px;
+}
+
+div.script > a {
+    background: #007BFF;
+    color: white;
+    padding: 7px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+</style>
+
+
+
+</head>
+<body>
+<!-------------------------------------------------------------------------------------------------------->    
+<!--Header (Logo + Menu de links + Fazer login)-->
+<header>
+    <a href="index.html"><img src="img/cinevintts(logo).png" alt="Logo da Tech Inova Aprendizagem" height="80"></a>
+        <nav>
+            <ul>
+              <li><a href="" class="botao-scripts">Scripts</a></li>
+              <li><a href="https://docs.google.com/spreadsheets/d/1W54PqoryuxhBAcXi2vt6ErVctVDIhSijOqpqn_BUWPA/edit#gid=0">Listas disponíveis</a></li>
+              <li><a href="">Vendas</a></li>
+            </ul>
+        </nav>
+</header>
+    
+<h1>Script de vendas</h1>
+
+<div class="container">
+    <div class="script">
+      <h2>Frase inicial</h2>
+      <p>Olá! Seja bem vindo à Cinevintt's. Em que posso lhe ajudar? ☺️</p>
+    </div>
+        
+    <div class="script">
+      <h2>O que o cliente deseja?</h2>
+      <a href="adquirir-servico.html">Adquirir o serviço</a>
+      <a href="">Como funciona a lista IPTV</a>
+      <a href="">Conteúdos inclusos na lista</a>
+      <a href="">Requisitos para funcionar corretamente</a>
+    </div>         
+
+    <div class="script">
+        <h2>Tabelas de informações</h2>
+        <a href="tabelas-de-informacoes.html">Ver tabelas</a>
+      </div>  
+</div>
+      
+<footer>
+    <p>&copy; 2024 - Victor</p>
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Scripts | Cinevintt's</title>
+
+<style>
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+pre {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Propriedades do elemento semântico de cabeçalho (header)*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header > a > img {
+    border-radius: 50%;
+}
+
+/* Propriedades de diferentes estados de links (a) dentro de um elemento semântico de navegação (nav)*/
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+    color: white;
+    text-decoration: none;
+    
+    height: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    padding: 7px 12px;
+    border-radius: 5px;
+    transition: background-color 0.1s ease; /* Adiciona uma transição suave para o efeito hover */
+}
+
+/*Propriedades para todos os links dentro do elemento nav (Efeito de quando o mouse está sobre um link)*/
+nav a:hover {
+    color: #007bff;
+    background: white; /* Cor de fundo com 80% de opacidade */;
+}
+
+/*Propriedades da lista não ordenada dentro do elemento semântico de navegação (nav) */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    place-items: center; 
+    margin: 0;
+    padding: 0;
+  
+}
+
+/*Propriedades dos itens da lista dentro do elemento semântico de navegação (nav)*/
+nav li {
+    margin-right: 20px;
+}
+
+/*Propriedades da classe botao home do seu link dentro do elemento semântico de navegação (nav)*/
+nav a.botao-scripts {
+    color: #007bff;
+    background: white;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------*/
+div.h1-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+div.h1-img > img {
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.script {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.script h2 {
+    color: #007bff;
+}
+
+.script p {
+    margin-bottom: 20px;
+}
+
+div.script a {
+    background: #007BFF;
+    color: white;
+    padding: 7px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+div.script:nth-child(2) > h2 {
+
+    color: green;
+
+}
+
+div.script:nth-child(3) > h2:nth-child(1) {
+
+color: red;
+
+}
+
+
+
+.div-segmento {
+    background-color: rgb(247, 247, 247);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+   
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+td img {
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+
+tr {
+    transition: transform 0.3s; /* Adiciona uma transição suave */
+}
+
+tr:hover {
+    background: rgb(233, 233, 233);
+    transform: scale(1.02); /* Aumenta o tamanho em 10% ao passar o mouse */
+}
+
+input, button {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#linkInput {
+    width: 600px;
+    padding: 8px;
+}
+  
+#resultado strong {
+    font-weight: normal;
+    
+}
+
+#resultado {
+  margin-bottom: 20px;
+}
+
+#insira-link {
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+<!-------------------------------------------------------------------------------------------------------->    
+<!--Header (Logo + Menu de links + Fazer login)-->
+<header>
+    <a href="index.html"><img src="img/cinevintts(logo).png" alt="Logo da Tech Inova Aprendizagem" height="80"></a>
+        <nav>
+            <ul>
+              <li><a href="" class="botao-scripts">Scripts</a></li>
+              <li><a href="">Listas disponíveis</a></li>
+              <li><a href="">Vendas</a></li>
+            </ul>
+        </nav>
+</header>
+
+<div class="h1-img">
+    <h1>Cliente quer adquirir o serviço > Possui Smart TV > Tizen</h1>
+    <img src="img/sistemas-operacionais/tizen(logo).png" alt="" height="50">
+</div>
+
+
+
+<div class="container">
+
+    <div class="script">
+        <h2>Perguntar se já possui algum aplicativo de IPTV instalado</h2>
+        <p>Você já possui algum aplicativo de IPTV instalado?</p>
+    </div>
+
+    <div class="script">
+        <h2>Sim</h2>
+        <p>Qual você usa?<p>
+            <div class="div-segmento" style="margin-bottom: 20px;">
+                <p style="font-weight: bold">Outros aplicativos</p>
+                <a href="tabelas-de-informacoes.html">Ver tabela de aplicativos IPTV</a>
+
+                <p id="insira-link">Insira o link e gere o script</p>
+                <input type="text" id="linkInput" placeholder="Insira o link aqui">
+                <button onclick="extrairDados()">Extrair Dados</button>
+                <p></p>
+                <p>Para inserir a sua lista IPTV basta preencher as seguintes informações:</p>
+                <div id="resultado"></div>
+            </div>
+
+            <div class="div-segmento">
+                <p style="font-weight: bold">SSIPTV</p>
+                <p>
+                    <pre>
+Para inserir a sua lista IPTV basta seguir o passo a passo:
+            
+1° Passo: Clique no ícone de configurações;
+2° Passo: Em geral, clique em obter código;
+3° Passo: Envie no chat o código correspondente que foi obtido.
+                    </pre>
+                </p>
+
+            </div>
+
+    </div>
+
+
+    <div class="script">
+        <h2>Não</h2>
+        <p>
+            <pre>Para instalar o aplicativo de IPTV na sua tv recomendamos assistir esse tutorial, de instalação do aplicativo "SSIPTV":
+
+https://www.youtube.com/watch?v=OYIYC0Jytdk&list=PLjBT7ef1Xf8SVwDnSMGx9LQ5C-k6a6ZGD
+            </pre>
+        </p>
+
+
+    <h2>Verificar se funcionou corretamente</h2>
+    <p>Sim - Passar o script do aplicativo SSIPTV</p>
+    <p>Não - Verificar o que ocorreu de errado</p>
+
+    </div>
+          
+    <div class="script">
+        <h2>Finalizar o atendimento de teste de 2 horas</h2>
+        <p>Pronto! Agora você possui um teste de 2 horas para aproveitar como quiser nosso serviço de streaming. Após o teste, você pode entrar em contato conosco para adquirir de forma definitiva, que custa apenas R$ 35,00 pago uma única vez. Muito obrigado pela preferência e aproveite!🤝😉</p>
+    </div>
+
+    <div class="script">
+        <h2>Finalizar o atendimento de compra definitiva</h2>
+        <p>
+            <pre>
+Para realizar a compra definitiva do nosso serviço, basta realizar o pix para a nossa conta:
+
+Chave Pix: 
+Tipo de Chave: Aleatória
+Banco: PagBank
+Nome: Victor Silva de Souza
+            </pre>
+            
+        </p>
+<div class="div-segmento" style="margin-bottom: 20px;">
+        <p style="font-weight: bold;">Pagamento recebido com sucesso</p>
+        <p>O seu pagamento foi recebido com sucesso! Agradecemos pela sua preferência e aproveite ao máximo! Nos ajude também divulgando nosso serviço!</p>
+</div>
+
+<div class="div-segmento" style="margin-bottom: 20px;">
+        <p style="font-weight: bold;">Pagamento não recebido</p> 
+        <p>Não recebemos seu o pagamento. Ocorreu algum problema ao realizar o pagamento?</p>
+</div>
+</div>
+       
+
+      
+<footer>
+    <p>&copy; 2024 - Victor</p>
+</footer>
+
+
+
+<script>
+  function extrairDados() {
+    var link = document.getElementById('linkInput').value;
+    var regex = /username=([^&]+)&password=([^&]+)/;
+    var match = link.match(regex);
+    
+    if (match) {
+      var usuario = match[1];
+      var senha = match[2];
+      var urlRegex = /^(https?:\/\/[^\/]+)(?=\/get\.php)/;
+      var urlMatch = link.match(urlRegex);
+      var url = urlMatch ? urlMatch[1] : "URL não encontrada";
+      
+      document.getElementById('resultado').innerHTML = "<strong>Nome (Name):</strong> Lista 2024<br><strong>Nome de Usuário (Username):</strong> " + usuario + "<br><strong>Senha (Password):</strong> " + senha + "<br><strong>URL:</strong> " + url;
+    } else {
+      document.getElementById('resultado').innerText = "Não foi possível extrair os dados do link.";
+    }
+  }
+</script>
+</body>
+</html>
